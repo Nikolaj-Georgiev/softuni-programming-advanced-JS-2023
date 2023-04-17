@@ -16,7 +16,6 @@ function lN(n1, n2, n3) {
     }
 
     console.log(`The largest number is ${result}.`);
-
 }
 
 lN(5, -3, 16)
