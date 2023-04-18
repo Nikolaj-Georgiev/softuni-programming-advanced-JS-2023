@@ -2,7 +2,7 @@ function squareOfStars(x = 5) {
     let result = '';
     for (let i = 1; i <= x; i++) {
         result += '* '.repeat(x);
-        result += '\n';
+        i === x ? false : result += '\n';
     }
     return result;
 }
