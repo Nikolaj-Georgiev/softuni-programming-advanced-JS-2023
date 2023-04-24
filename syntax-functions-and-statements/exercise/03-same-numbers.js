@@ -5,7 +5,6 @@ function sameNumbers(number) {
     let sumOfDigits = numAsArr.reduce((a, c) => a + c, 0);
     lenChecker === checkedArr.length ? console.log(true) : console.log(false);
     console.log(sumOfDigits);
-
 }
 
 sameNumbers(2222222);
