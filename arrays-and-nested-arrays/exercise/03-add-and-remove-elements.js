@@ -19,7 +19,6 @@ function addAndRemove(commandsArr) {
     } else {
         return 'Empty';
     }
-
 }
 
 let test1 = addAndRemove(['add',
