@@ -1,33 +1,33 @@
-// function biggestElement(matrix) {
+function biggestElement(matrix) {
 
-//     let biggestElement;
+    let biggestElement;
 
-//     for (let i = 0; i < matrix.length; i++) {
-//         for (let j = 0; j < matrix[i].length; j++) {
-//             if (biggestElement) {
-//                 if (biggestElement < matrix[i][j]) {
-//                     biggestElement = matrix[i][j];
-//                 }
-//             } else {
-//                 biggestElement = matrix[i][j];
-//             }
-//         }
-//     }
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (biggestElement) {
+                if (biggestElement < matrix[i][j]) {
+                    biggestElement = matrix[i][j];
+                }
+            } else {
+                biggestElement = matrix[i][j];
+            }
+        }
+    }
 
-//     return biggestElement;
-// }
-// const test1 = biggestElement([
-//     [],
-//     []
-// ]);
-// const test2 = biggestElement([
-//     [3, 5, 7, 12],
-//     [-1, 4, 33, 2],
-//     [8, 3, 0, 4]
-// ]);
+    return biggestElement;
+}
+const test1 = biggestElement([
+    [],
+    []
+]);
+const test2 = biggestElement([
+    [3, 5, 7, 12],
+    [-1, 4, 33, 2],
+    [8, 3, 0, 4]
+]);
 
-// console.log(test1);
-// console.log(test2);
+console.log(test1);
+console.log(test2);
 
 function biggestElement1(matrix) {
 
