@@ -10,7 +10,6 @@ function negativePositive(input) {
     })
 
     console.log(result.join('\n'));
-
 }
 
 negativePositive([7, -2, 8, 9]);
