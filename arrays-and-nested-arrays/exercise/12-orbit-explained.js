@@ -22,7 +22,6 @@ function orbit(input) {
             matrix[i].push([]);
         }
     }
-    console.table(matrix); // this is for better overview of the matrix.
 
     // It iterates over each element in the matrix, and assigns the maximum value of the absolute difference 
     // between the current element's row and rowIndex, and the absolute difference between the current element's 
@@ -34,12 +33,11 @@ function orbit(input) {
             let colValue = Math.abs(j - colIndex) + 1;
             let cellValue = Math.max(rowValue, colValue);
             matrix[i][j] = cellValue;
-            console.table(matrix); //this is put for visualization, how the matrix is filled.
+            // console.table(matrix); //this is put for visualization, how the matrix is filled.
         }
     }
 
-    console.table(matrix) // final overview of the matrix.
-
+    matrix.map(row => console.log(row.join(' ')));
 }
 
 orbit([4, 4, 0, 0]);
