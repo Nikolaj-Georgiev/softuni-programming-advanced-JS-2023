@@ -1,9 +1,10 @@
 function ticTacToe(input) {
 
-    let playingDesk = [];
-    for (let i = 0; i < 3; i++) {
+    const deckSize = 3;
+    const playingDesk = [];
+    for (let i = 0; i < deckSize; i++) {
         playingDesk[i] = [];
-        for (let j = 0; j < 3; j++) {
+        for (let j = 0; j < deckSize; j++) {
             playingDesk[i][j] = false;
         }
     }
@@ -88,7 +89,6 @@ function ticTacToe(input) {
                 flag = true;
             }
         }
-
 
         if (flag) {
             break;
