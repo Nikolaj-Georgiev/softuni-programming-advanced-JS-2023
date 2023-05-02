@@ -1,9 +1,7 @@
 function listOfNames(input) {
-    let counter = 1;
     const sorted = input.sort((a, b) => a.localeCompare(b));
-    sorted.forEach(element => {
-        console.log(`${counter}.${element}`);
-        counter++;
+    sorted.forEach((element, index) => {
+        console.log(`${index + 1}.${element}`);
     });
 }
 
