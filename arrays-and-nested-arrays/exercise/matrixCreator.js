@@ -7,5 +7,5 @@ function matrixCreator(rows, cols, initial) {
     return matrix;
 }
 
-const matrix = createMatrix(3, 3, null);
+const matrix = matrixCreator(3, 3, null);
 console.table(matrix); // [[null, null, null], [null, null, null], [null, null, null]]
