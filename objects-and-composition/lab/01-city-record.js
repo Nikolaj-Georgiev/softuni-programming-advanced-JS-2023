@@ -1,6 +1,6 @@
 function cityRecord(name, population, treasury) {
      const city = {
-        name,
+        name, // това е съкратен запис на name: name,
         population,
         treasury
     };
