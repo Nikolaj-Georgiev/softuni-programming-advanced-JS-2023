@@ -1,5 +1,5 @@
 function rectangle(width, height, color) {
-    const rectan = {
+    const rectangular = {
         width,
         height,
         color: color[0].toUpperCase() + color.slice(1),
@@ -7,8 +7,7 @@ function rectangle(width, height, color) {
             return Number(this.width) * Number(this.height);
         }
     }
-
-    return rectan;
+    return rectangular;
 }
 
 let rect = rectangle(4, 5, 'red');
