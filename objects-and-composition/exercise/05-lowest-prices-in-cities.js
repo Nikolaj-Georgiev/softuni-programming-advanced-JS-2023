@@ -2,7 +2,7 @@ function lowestPrices(input) {
     const result = {};
     input.forEach(element => {
         let [townName, productName, productPrice] = element.split(' | ').map(x => isNaN(x) ? x : Number(x));
-        if (result.hasOwnProperty(productName)) {
+        if (result[productName]) {
             if (productPrice >= result[productName]['productPrice']) {
                 productPrice = result[productName]['productPrice'];
                 townName = result[productName]['townName'];
@@ -12,7 +12,7 @@ function lowestPrices(input) {
     });
 
     Object.keys(result).forEach(product => {
-        console.log(`${product} -> ${result[product]['productPrice']} (${result[product]['townName']})`);
+        console.log(`${product} -> ${result[product].productPrice} (${result[product]['townName']})`);
     });
 }
 
