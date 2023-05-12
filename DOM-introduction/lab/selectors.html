@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <h1 id="title">Introduction to DOM</h1>
+    <button onclick="alert('DOM')">Click me</button>
+    <ul>
+        <li class="row">DOM example methods example example</li>
+        <li class="row">DOM properties example</li>
+    </ul>
+    <script>
+        function edit(element, match, replacer) {
+            const text = element.textContent;
+            // const pattern = new RegExp(match, 'g');
+            // const result = text.replace(pattern, replacer);
+            const result = text.split(match).join(replacer);
+            element.textContent = result;
+        }
+    </script>
+
+</body>
+</html>
