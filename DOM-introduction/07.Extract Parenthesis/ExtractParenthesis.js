@@ -3,7 +3,7 @@ function extract(content) {
     const pattern = /\((.+?)\)/g;
     let result = '';
     let match = pattern.exec(text);
-    result += match;
+    result += match[1];
     while(match !== null) {
         result += '; ' + match[1];
         match = pattern.exec(text);
