@@ -15,7 +15,7 @@ function attachEventsListeners() {
     const inputUnits = document.querySelector('#inputUnits').value;
     const outputUnits = document.querySelector('#outputUnits').value;
     const outputDistance = document.querySelector('#outputDistance');
-    let calculator = input * metrics[inputUnits];
+    const calculator = input * metrics[inputUnits];
     outputDistance.value = calculator / metrics[outputUnits];
    });
 }
