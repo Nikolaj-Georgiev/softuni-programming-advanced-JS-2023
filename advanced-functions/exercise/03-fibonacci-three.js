@@ -1,9 +1,9 @@
 function getFibonator() {
     return (function () {
-        const next = this.prev + this.curr;
-        this.prev = this.curr;
-        this.curr = next;
-        return this.prev;
+        const temp = this.cur + this.next;
+        this.cur = this.next;
+        this.next = temp;
+        return this.cur;
     }).bind({
         prev: 0,
         curr:1

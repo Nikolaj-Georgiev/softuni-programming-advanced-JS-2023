@@ -1,9 +1,9 @@
-function getFibonator(num1 = 0, num2 = 1) {
+function getFibonator(cur = 0, next = 1) {
     return function () {
-        let sum = num1 + num2;
-        num1 = num2;
-        num2 = sum;
-        return num1;
+        let temp = cur + next;
+        cur = next;
+        next = temp;
+        return cur;
     }
 }
 
