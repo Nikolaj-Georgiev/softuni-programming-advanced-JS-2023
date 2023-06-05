@@ -10,7 +10,6 @@ function printDeckOfCards(cards) {
             return card;
         } catch (ex) {
             console.log(`Invalid card: ${x}`);
-            return;
         }
         
     })
@@ -42,7 +41,6 @@ function printDeckOfCards(cards) {
         }
         return card;
     }
-
 }
 
 printDeckOfCards(['AS', '10D', 'KH', '2C']);
