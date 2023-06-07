@@ -15,7 +15,7 @@ describe('Testing the isOddOrEven function', () => {
     it('Does not work with object', () => {
         expect(isOddOrEven({asd: 'aasd'})).to.be.undefined;
     });
-    it('Works correct with strings', () => {
+    it('Works correct with empty string', () => {
         expect(isOddOrEven('')).to.equal('even');
     });
 
