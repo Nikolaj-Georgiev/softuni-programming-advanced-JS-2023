@@ -30,7 +30,7 @@ function ticketCreator(input, sortingCriteria) {
     });
 
     result = sorter[sortingCriteria](result);
-    console.log(result);
+    return result;
 }
 
 ticketCreator(['Philadelphia|94.20|available',
