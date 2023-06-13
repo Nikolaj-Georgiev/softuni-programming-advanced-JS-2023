@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "chai": "^4.3.7"
+  },
+  "name": "classes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
