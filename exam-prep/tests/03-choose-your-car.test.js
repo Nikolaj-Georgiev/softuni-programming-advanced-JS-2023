@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {chooseYourCar} = require('../03-choose-your-car');
+const {chooseYourCar} = require('../js-advanced-exam-22-october-2022/03-choose-your-car');
 console.log(chooseYourCar);
 
 describe('Testing choose your car object', function() {
