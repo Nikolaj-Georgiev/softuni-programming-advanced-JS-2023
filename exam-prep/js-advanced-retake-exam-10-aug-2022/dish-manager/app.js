@@ -65,7 +65,7 @@ function solve() {
     }
     
   }
-
+  
   function createElement(type, content, className) {
     let el = document.createElement(type);
     className ? el.classList.add(className) : '';
