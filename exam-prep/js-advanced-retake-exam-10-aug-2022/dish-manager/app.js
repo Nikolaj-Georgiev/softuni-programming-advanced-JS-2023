@@ -12,10 +12,9 @@ function solve() {
   const spanProgressCount = document.querySelector('#progress-count');
   const clearBtn = document.querySelector('#clear-btn');
   let counter = 0;
-  
   submitBtn.addEventListener('click', onSubmit);
+
   const inputFields = [firstName, lastName, age, genderSelect, dishDescription];
-  
   
   function onSubmit(e) {
     e.preventDefault();
@@ -53,6 +52,7 @@ function solve() {
       spanProgressCount.textContent = counter;
       liEachLine.remove();
     };
+
     function completeFn(){
       editBtn.remove();
       completeBtn.remove();
@@ -60,6 +60,7 @@ function solve() {
       counter--;
       spanProgressCount.textContent = counter;
     };
+    
     function clearFn(){
       liEachLine.remove();
     }
