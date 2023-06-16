@@ -34,7 +34,6 @@ describe('Testing carService', () => {
             expect(carService.partsToBuy([], [1])).to.equal(0);
             expect(carService.partsToBuy([{part: 'blowoff valve', price: 145 }, { part: 'coil springs', price: 230 }], ['blowoff valve'])).to.equal(145);
             expect(carService.partsToBuy([{part: 'blowoff valve', price: 145 }, { part: 'coil springs', price: 230 }], ['blowoff valve', 'coil springs'])).to.equal(375);
-
         });
     });
-})
+});
